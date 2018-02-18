@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{204C5315-CF15-4C9B-8783-FFF474D289A7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Generators</RootNamespace>
+    <AssemblyName>Generators</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="myfunc">
+      <HintPath>..\..\mylib\myfunc\myfunc\bin\Release\myfunc.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BBS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BBS.Designer.cs">
+      <DependentUpon>BBS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BBSbyte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BBSbyte.Designer.cs">
+      <DependentUpon>BBSbyte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BMbits.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BMbits.Designer.cs">
+      <DependentUpon>BMbits.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BMbyte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BMbyte.Designer.cs">
+      <DependentUpon>BMbyte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Geffe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Geffe.Designer.cs">
+      <DependentUpon>Geffe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="L20.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="L20.Designer.cs">
+      <DependentUpon>L20.cs</DependentUpon>
+    </Compile>
+    <Compile Include="L89.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="L89.Designer.cs">
+      <DependentUpon>L89.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LehmerHigh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LehmerHigh.Designer.cs">
+      <DependentUpon>LehmerHigh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LehmerLow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LehmerLow.Designer.cs">
+      <DependentUpon>LehmerLow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Librarian.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Librarian.Designer.cs">
+      <DependentUpon>Librarian.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Standart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Standart.Designer.cs">
+      <DependentUpon>Standart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Wolfram.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Wolfram.Designer.cs">
+      <DependentUpon>Wolfram.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="BBS.resx">
+      <DependentUpon>BBS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BBSbyte.resx">
+      <DependentUpon>BBSbyte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BMbits.resx">
+      <DependentUpon>BMbits.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BMbyte.resx">
+      <DependentUpon>BMbyte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Geffe.resx">
+      <DependentUpon>Geffe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="L20.resx">
+      <DependentUpon>L20.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="L89.resx">
+      <DependentUpon>L89.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LehmerHigh.resx">
+      <DependentUpon>LehmerHigh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LehmerLow.resx">
+      <DependentUpon>LehmerLow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Librarian.resx">
+      <DependentUpon>Librarian.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Standart.resx">
+      <DependentUpon>Standart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wolfram.resx">
+      <DependentUpon>Wolfram.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

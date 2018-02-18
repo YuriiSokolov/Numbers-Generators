@@ -1,0 +1,5 @@
+E:\crypto2\lab1\mylib\myfunc\myfunc\obj\Debug\myfunc.csprojResolveAssemblyReference.cache
+E:\crypto2\lab1\mylib\myfunc\myfunc\bin\Debug\myfunc.dll
+E:\crypto2\lab1\mylib\myfunc\myfunc\bin\Debug\myfunc.pdb
+E:\crypto2\lab1\mylib\myfunc\myfunc\obj\Debug\myfunc.dll
+E:\crypto2\lab1\mylib\myfunc\myfunc\obj\Debug\myfunc.pdb
